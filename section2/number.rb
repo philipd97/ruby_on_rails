@@ -33,21 +33,21 @@ puts
 
 #1
 puts "Please enter the first number" 
-num_1 = gets.chomp
+num_1 = gets.chomp.to_f
 puts "Please enter the second number"
-num_2 = gets.chomp
+num_2 = gets.chomp.to_f
 
 #2
-puts "The first number multiplied by the second number is #{num_1.to_f * num_2.to_f}"
+puts "The first number multiplied by the second number is #{num_1 * num_2}"
 
 #3
-puts "The first number divided by the second number is #{num_1.to_f / num_2.to_f}"
+puts "The first number divided by the second number is #{num_1 / num_2}"
 
 #4 
-puts "The fist number subtracted from the second number is #{num_2.to_f - num_1.to_f}"
+puts "The fist number subtracted from the second number is #{num_2 - num_1}"
 
 #5
-puts "The first number added to the second number is #{num_2.to_f + num_1.to_f}"
+puts "The first number added to the second number is #{num_2 + num_1}"
 
 #6
-puts "The first number modulus the second number is #{num_1.to_f % num_2.to_f}"
+puts "The first number modulus the second number is #{num_1 % num_2}"
