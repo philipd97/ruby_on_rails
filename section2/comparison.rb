@@ -42,3 +42,18 @@ p 10.eql?(10.0) # false
 p 10.eql?(10) # true
 p 10.eql?("10") # false
 
+# Spaceship Operator
+# <=>
+# Value return: -1, 0, -1
+# Left Operand < Right Operand then -1
+# Left Operand = Right Operand then 0
+# Left Operand > Right Operand then 1
+p 1 <=> 2 # -1
+p 2 <=> 2 # 0
+p 3 <=> 2 # 1
+# For String, it checks on ASCII, it is case sensitive
+# lower case has higher value than Upper case value
+p "Hello" <=> "I" # I has higher value than H, therefore return -1
+p "Hello" <=> "Bye" # H has higher value than B, therefore return 1
+p "Hello" <=> "hello" # hello lower case has higher value than Hello, therefore return -1
+ 
