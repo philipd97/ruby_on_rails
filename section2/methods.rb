@@ -7,7 +7,11 @@ def multiply(num_1, num2)
 end
 
 def divide(num1, num2)
-  num1 / num2
+  if num2.eql?(0.0)
+    return "invalid, as #{num1} could not divide by #{num2}" # The first number divided by the second number is invalid, as 1.0 could not divide by 0.0
+  end
+
+  return num1 / num2
 end
 
 def subtract(num2, num1)
@@ -19,7 +23,11 @@ def add(num2, num1)
 end
 
 def modulus(num1, num2)
-  num1 % num2 
+  if num2.eql?(0.0)
+    return "invalid, as #{num1} could not be modulus by #{num2}" # The first number modulus the second number is invalid, as 1.0 could not perform modulus by 0.0
+  end
+  
+  return num1 % num2 
 end
 
 puts "Simple Calculator"
