@@ -3,23 +3,23 @@
 # Therefore Methods have to be declared above before calling it
 
 def multiply(num_1, num2)
-  num_1.to_f * num2.to_f
+  num_1 * num2
 end
 
 def divide(num1, num2)
-  num1.to_f / num2.to_f
+  num1 / num2
 end
 
 def subtract(num2, num1)
-  num2.to_f - num1.to_f
+  num2 - num1
 end
 
 def add(num2, num1)
-  num2.to_f + num1.to_f
+  num2 + num1
 end
 
 def modulus(num1, num2)
-  num1.to_f % num2.to_f
+  num1 % num2
 end
 
 puts "Simple Calculator"
@@ -40,16 +40,17 @@ loop do
 
   begin
     # To check if the input is Number
-    Float($num_1)
-    Float($num_2)
+    $num_1 = Float($num_1)
+    $num_2 = Float($num_2)
 
     # Check division or modulus able to perform by checking second number
-    if ($num_2.to_f.eql?(0.0))
-      puts "\nInvalid for second number, as #{$num_2} could not perform division or modulus operation."
-      puts "Please try again.\n\n"
-    else
+    # If second number is not 0.0, exit the Loop & proceed with calculation
+    if (!$num_2.eql?(0.0))
       break
     end
+
+    puts "\nInvalid for second number, as #{$num_2} could not perform division or modulus operation."
+    puts "Please try again.\n\n"
 
   rescue ArgumentError => e
     puts "\nInput must be Number"
