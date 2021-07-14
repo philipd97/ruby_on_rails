@@ -101,4 +101,3 @@ elsif $userChoice == 5
   puts "The first number modulus the second number is #{modulus($num_1, $num_2)}"
 end
 
-  
