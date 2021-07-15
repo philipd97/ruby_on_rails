@@ -69,8 +69,8 @@ loop do
   end
 
   # Check division or modulus able to perform by checking second number
-  # If second number is not 0.0, exit the Loop & proceed with calculation
-  if ($num_2 != 0.0)
+  # If second number is not 0, exit the Loop & proceed with calculation
+  if ($num_2 != 0)
     break
   end
 
