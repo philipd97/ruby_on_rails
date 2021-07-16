@@ -77,9 +77,9 @@ loop do
   puts "\nInvalid for second number, as #{$num_2} could not perform division or modulus operation."
   puts "Please try again.\n\n"
 
-  rescue ArgumentError => e
-    puts "\nInput must be Number"
-    puts "Please try again.\n\n"
+rescue ArgumentError => e
+  puts "\nInput must be Number"
+  puts "Please try again.\n\n"
 end
 
 # If Else
