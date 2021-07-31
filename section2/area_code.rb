@@ -22,11 +22,12 @@ def get_city_names(hash)
 end
 
 def get_area_code(hash, key)
-  if hash.has_key?(key)
-    "The area code for #{key} is #{hash[key]}"
-  else
-    "Invalid city name, please try again."
-  end
+  # if hash.has_key?(key)
+  #   "The area code for #{key} is #{hash[key]}"
+  # else
+  #   "Invalid city name, please try again."
+  # end
+  hash.has_key?(key) ? "The area code for #{key} is #{hash[key]}" : "Invalid city name, please try again."
 end
 
 loop do
