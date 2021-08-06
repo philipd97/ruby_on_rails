@@ -14,21 +14,17 @@
 
 # Practice on JSON format Hash
 def get_shakey
-  {
-    "William Shakespeare"=>
-    {
-    "1"=>  {"title"=>"The Two Gentlemen of Verona", "finished"=>1591}, 
-	  "2"=>  {"title"=>"The Taming of the Shrew", "finished"=>1591}, 
-	  "3"=>  {"title"=>"Henry VI, Part 2", "finished"=>1591}, 
-	  "4"=>  {"title"=>"Henry VI, Part 3", "finished"=>1591}, 
-	  "5"=>  {"title"=>"Henry VI, Part 1", "finished"=>1592}, 
-	  "6"=>  {"title"=>"Titus Andronicus", "finished"=>1592}, 
-	  "7"=>  {"title"=>"Richard III", "finished"=>1593}, 
-	  "8"=>  {"title"=>"Edward III", "finished"=>1593}, 
-	  "9"=>  {"title"=>"The Comedy of Errors", "finished"=>1594},
-	  "10"=> {"title"=>"Love's Labour's Lost", "finished"=>1595}
-    }
-  }
+  { "William Shakespeare"=> {
+    "1"=>  { "title"=>"The Two Gentlemen of Verona", "finished"=>1591 }, 
+    "2"=>  { "title"=>"The Taming of the Shrew", "finished"=>1591 }, 
+    "3"=>  { "title"=>"Henry VI, Part 2", "finished"=>1591 }, 
+    "4"=>  { "title"=>"Henry VI, Part 3", "finished"=>1591 }, 
+    "5"=>  { "title"=>"Henry VI, Part 1", "finished"=>1592 }, 
+    "6"=>  { "title"=>"Titus Andronicus", "finished"=>1592 }, 
+    "7"=>  { "title"=>"Richard III", "finished"=>1593 }, 
+    "8"=>  { "title"=>"Edward III", "finished"=>1593 }, 
+    "9"=>  { "title"=>"The Comedy of Errors", "finished"=>1594 },
+    "10"=> { "title"=>"Love's Labour's Lost", "finished"=>1595 } } }
 end
 
 # Display all Book Title
