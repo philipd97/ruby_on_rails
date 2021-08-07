@@ -14,7 +14,8 @@
 
 # Practice on JSON format Hash
 def get_shakey
-  { "William Shakespeare"=> {
+  { 
+    "William Shakespeare"=> {
     "1"=>  { "title"=>"The Two Gentlemen of Verona", "finished"=>1591 }, 
     "2"=>  { "title"=>"The Taming of the Shrew", "finished"=>1591 }, 
     "3"=>  { "title"=>"Henry VI, Part 2", "finished"=>1591 }, 
@@ -24,7 +25,9 @@ def get_shakey
     "7"=>  { "title"=>"Richard III", "finished"=>1593 }, 
     "8"=>  { "title"=>"Edward III", "finished"=>1593 }, 
     "9"=>  { "title"=>"The Comedy of Errors", "finished"=>1594 },
-    "10"=> { "title"=>"Love's Labour's Lost", "finished"=>1595 } } }
+    "10"=> { "title"=>"Love's Labour's Lost", "finished"=>1595 } 
+    } 
+  }
 end
 
 # Display all Book Title
